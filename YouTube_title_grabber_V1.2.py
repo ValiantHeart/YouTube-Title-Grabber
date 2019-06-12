@@ -28,7 +28,7 @@ else:
 
 
 #playlist_ID = str(input("What is the Playlist ID for the playlist you'd like to scan? \n Playlist_ID:"))
-service = build('youtube','v3',developerKey = "AIzaSyBHa9w8rO9woENPKio1p2DiApMFKzau4Y4")
+service = build('youtube','v3',developerKey = "")
 snippit_request = service.playlistItems().list(part="snippet", playlistId=playlist_ID, maxResults=50)
 #^ grabs first 50 items in the playlist
 
